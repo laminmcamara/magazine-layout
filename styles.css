@@ -154,8 +154,46 @@ hr {
   grid-column: 1 / -1;
 }
 
-@media only screen and (max-width: 720px) {.image-wrapper {grid-template-columns: 1fr;} }
-@media only screen and (max-width: 600px) {.text-with-images {grid-template-columns: 1fr;}}
-@media only screen and (max-width: 550px) {.hero-title { font-size: 6rem;} .hero-subtitle, .author, .quote, .list-title {font-size: 1.8rem;
-} .social-icons {font-size: 2rem;} .text {font-size: 1.6rem;} }
-@media only screen and (max-width: 420px) {.hero-title {font-size: 4.5rem;}}
+/* Media query for screens smaller than 720px */
+@media only screen and (max-width: 720px) {
+    /* Adjusts the grid layout for image wrapper to have a single column */
+    .image-wrapper {
+        grid-template-columns: 1fr; /* One column layout */
+    }
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    /* Adjusts the grid layout for text with images to have a single column */
+    .text-with-images {
+        grid-template-columns: 1fr; /* One column layout */
+    }
+}
+
+/* Media query for screens smaller than 550px */
+@media only screen and (max-width: 550px) {
+    /* Adjusts font sizes for various elements for better readability */
+    .hero-title {
+        font-size: 6rem; /* Large title size */
+    }
+    .hero-subtitle, 
+    .author, 
+    .quote, 
+    .list-title {
+        font-size: 1.8rem; /* Subtitle and other text sizes */
+    }
+    .social-icons {
+        font-size: 2rem; /* Size of social media icons */
+    }
+    .text {
+        font-size: 1.6rem; /* General text size */
+    }
+}
+
+/* Media query for screens smaller than 420px */
+@media only screen and (max-width: 420px) {
+    /* Further reduces the hero title size for small screens */
+    .hero-title {
+        font-size: 4.5rem; /* Smaller title size for better fit */
+    }
+}
